@@ -78,14 +78,13 @@ img {
 
 /* Buttons */
 .btnPrimary {
-  position: relative;
   display: inline-flex;
   align-items: center;
   justify-content: center;
   background: var(--red);
   color: #fff;
-  border: 2px solid var(--red);
-  padding: 0 2rem;
+  border: none;
+  padding: 0 2.2rem;
   height: 53px;
   font-size: 0.9rem;
   font-family: var(--font);
@@ -95,7 +94,8 @@ img {
   letter-spacing: 0.06em;
   text-decoration: none;
   cursor: pointer;
-  transition: background 0.2s ease, border-color 0.2s ease, transform 0.1s ease;
+  transform: skewX(-14deg);
+  transition: background 0.2s ease, filter 0.2s ease;
   border-radius: 0;
   appearance: none;
   -webkit-appearance: none;
@@ -103,52 +103,19 @@ img {
   box-sizing: border-box;
 }
 
-.btnPrimary::before {
-    content: '';
-    position: absolute;
-    top: -2.4px;
-    right: 100.2%;
-    width: 0;
-    height: 0;
-    rotate: 2deg;
-    border-top: 1px solid transparent;
-    border-bottom: 52px solid transparent;
-    border-right: 19px solid var(--red);
-    transition: border-right-color 0.2s ease;
+.btnPrimary .btnInner {
+  display: inline-block;
+  transform: skewX(14deg);
 }
-
-.btnPrimary::after {
-    content: '';
-    position: absolute;
-    top: -1.4px;
-    right: -20px;
-    width: 0;
-    height: 0;
-    rotate: 2deg;
-    border-top: 52px solid transparent;
-    border-bottom: 1px solid transparent;
-    border-left: 19px solid var(--red);
-    transition: border-left-color 0.2s ease;
-}
-
-.btnPrimary:hover::after {
-  border-left-color: var(--red-dark);
-}
-
-.btnPrimary:hover::before {
-  border-right-color: var(--red-dark);
-}
-
 
 .btnPrimary:hover {
   background: var(--red-dark);
-  border-color: var(--red-dark);
+  filter: drop-shadow(0 6px 18px rgba(208,2,27,0.55));
 }
-.btnPrimary:active { transform: scale(0.97); }
+.btnPrimary:active { transform: skewX(-14deg) scale(0.97); }
 .btnPrimary.fullWidth {
-  width: calc(100% - 38px);
-  margin-left: 19px;
-  text-align: center;
+  width: calc(100% - 14px);
+  margin-left: 7px;
 }
 
 .btnOutline {
@@ -299,6 +266,9 @@ img {
 }
 .headerCta {
   flex-shrink: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   background: var(--red);
   color: #fff;
   text-decoration: none;
@@ -308,12 +278,24 @@ img {
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.06em;
-  padding: 0.6rem 1.4rem;
+  padding: 0 1.4rem;
+  height: 38px;
+  border: none;
   border-radius: 0;
-  transition: background 0.2s;
+  transform: skewX(-14deg);
+  transition: background 0.2s ease, filter 0.2s ease;
   white-space: nowrap;
+  box-sizing: border-box;
+  line-height: 1;
 }
-.headerCta:hover { background: var(--red-dark); }
+.headerCta .btnInner {
+  display: inline-block;
+  transform: skewX(14deg);
+}
+.headerCta:hover {
+  background: var(--red-dark);
+  filter: drop-shadow(0 4px 14px rgba(208,2,27,0.55));
+}
 
 /* ===== HERO ===== */
 .hero {

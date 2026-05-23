@@ -46,7 +46,7 @@ function App() {
             <a href="#noticias">Notícias</a>
             <a href="#contacto">Contacto</a>
           </nav>
-          <a href="#contacto" className="headerCta">Aula Grátis</a>
+          <a href="#contacto" className="headerCta"><span className="btnInner">Aula Grátis</span></a>
           <button
             className={`hamburger${menuOpen ? " open" : ""}`}
             onClick={() => setMenuOpen(o => !o)}
@@ -90,7 +90,7 @@ function App() {
               A sua família Gracie Barra espera por si.
             </p>
             <div className="heroCtas">
-              <a href="#contacto" className="btnPrimary">Aula Experimental Grátis</a>
+              <a href="#contacto" className="btnPrimary"><span className="btnInner">Aula Experimental Grátis</span></a>
               <a href="#sobreNos" className="btnOutline">Saiba Mais</a>
             </div>
           </div>
@@ -134,7 +134,7 @@ function App() {
               A nossa academia é um espaço seguro e acolhedor para todas as idades e níveis.
               Seja para defesa pessoal, condição física ou competição — temos o programa certo para si.
             </p>
-            <a href="#programas" className="btnPrimary">Ver Programas</a>
+            <a href="#programas" className="btnPrimary"><span className="btnInner">Ver Programas</span></a>
           </div>
           <div className="aboutImage">
             <img
@@ -166,7 +166,7 @@ function App() {
               Não se preocupe: você e a sua família estão em boas mãos. Os nossos instrutores
               são certificados e dedicados ao seu desenvolvimento dentro e fora do tatami.
             </p>
-            <a href="#contacto" className="btnPrimary">Junte-se a Nós</a>
+            <a href="#contacto" className="btnPrimary"><span className="btnInner">Junte-se a Nós</span></a>
           </div>
         </div>
       </section>
@@ -423,7 +423,7 @@ function App() {
                 <option>Treino Privado</option>
               </select>
               <textarea placeholder="Mensagem (opcional)" rows="4"></textarea>
-              <button type="submit" className="btnPrimary fullWidth">Enviar Pedido</button>
+              <button type="submit" className="btnPrimary fullWidth"><span className="btnInner">Enviar Pedido</span></button>
             </form>
           </div>
         </div>
