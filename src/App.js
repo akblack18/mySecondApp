@@ -119,8 +119,8 @@ function App() {
         </div>
       </div>
 
-      {/* WE ARE GRACIE BARRA */}
-      <section id="sobreNos" className="about">
+      {/* WE ARE GRACIE BARRA + WHY */}
+      <section id="sobreNos" className="aboutWhy">
         <div className="container aboutGrid">
           <div className="aboutText">
             <span className="sectionLabel">Sobre Nós</span>
@@ -143,10 +143,6 @@ function App() {
             />
           </div>
         </div>
-      </section>
-
-      {/* WHY GRACIE BARRA */}
-      <section className="why">
         <div className="container whyGrid">
           <div className="whyImage">
             <img
