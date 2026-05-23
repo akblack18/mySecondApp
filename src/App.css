@@ -398,16 +398,18 @@ img {
 
 /* ===== ABOUT + WHY ===== */
 .aboutWhy {
-  padding: 6rem 0;
-  background-color: #fff;
-  background-image: url('https://graciebarraeurope.com/wp-content/uploads/2020/10/Logo-faded-icon-new.png');
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
-  display: flex;
-  flex-direction: column;
-  gap: 5rem;
+padding: 6rem 0;
+    background-color: #fff;
+    background-image: url(https://graciebarraeurope.com/wp-content/uploads/2020/10/Logo-faded-icon-new.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: 60%;
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+    background-origin: padding-box;
 }
+
 .aboutGrid {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -1011,7 +1013,7 @@ img {
 
   .statsGrid { grid-template-columns: repeat(2, 1fr); }
 
-  .aboutWhy { padding: 4rem 0; gap: 3rem; }
+  .aboutWhy { padding: 4rem 0; gap: 3rem; background-image: none; }
   .aboutGrid { grid-template-columns: 1fr; gap: 2rem; }
   .aboutImage img { height: 280px; }
 

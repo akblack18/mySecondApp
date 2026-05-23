@@ -19,7 +19,7 @@ function App() {
       <div className="topBar">
         <div className="container topBarInner">
           <div className="topBarLeft">
-            <span>📍 Lisboa, Portugal</span>
+            <span>📍 Lisbon, Portugal</span>
             <span>✉ info@graciebarra.pt</span>
           </div>
           <div className="topBarRight">
@@ -39,14 +39,14 @@ function App() {
             />
           </a>
           <nav className="mainNav">
-            <a className="active" href="#home">Home</a>
-            <a href="#sobreNos">Sobre Nós</a>
-            <a href="#programas">Programas</a>
-            <a href="#eventos">Eventos</a>
-            <a href="#noticias">Notícias</a>
-            <a href="#contacto">Contacto</a>
+            <a href="#home">Home</a>
+            <a href="#sobreNos">About Us</a>
+            <a href="#programas">Programs</a>
+            <a href="#eventos">Events</a>
+            <a href="#noticias">News</a>
+            <a href="#contacto">Contact</a>
           </nav>
-          <a href="#contacto" className="headerCta"><span className="btnInner">Aula Grátis</span></a>
+          <a href="#contacto" className="headerCta"><span className="btnInner">Free Class</span></a>
           <button
             className={`hamburger${menuOpen ? " open" : ""}`}
             onClick={() => setMenuOpen(o => !o)}
@@ -62,12 +62,12 @@ function App() {
         {/* MOBILE DRAWER */}
         <div className={`mobileNav${menuOpen ? " open" : ""}`} aria-hidden={!menuOpen}>
           <a href="#home" onClick={closeMenu}>Home</a>
-          <a href="#sobreNos" onClick={closeMenu}>Sobre Nós</a>
-          <a href="#programas" onClick={closeMenu}>Programas</a>
-          <a href="#eventos" onClick={closeMenu}>Eventos</a>
-          <a href="#noticias" onClick={closeMenu}>Notícias</a>
-          <a href="#contacto" onClick={closeMenu}>Contacto</a>
-          <a href="#contacto" className="mobileNavCta" onClick={closeMenu}>Aula Grátis</a>
+          <a href="#sobreNos" onClick={closeMenu}>About Us</a>
+          <a href="#programas" onClick={closeMenu}>Programs</a>
+          <a href="#eventos" onClick={closeMenu}>Events</a>
+          <a href="#noticias" onClick={closeMenu}>News</a>
+          <a href="#contacto" onClick={closeMenu}>Contact</a>
+          <a href="#contacto" className="mobileNavCta" onClick={closeMenu}>Free Class</a>
         </div>
       </header>
 
@@ -79,19 +79,19 @@ function App() {
         <img
           className="heroImg"
           src="https://graciebarraeurope.com/wp-content/uploads/2020/11/DSC_0091-10-1200x799-1.jpg"
-          alt="Treino Gracie Barra"
+          alt="Gracie Barra Training"
         />
         <div className="heroOverlay">
           <div className="heroContent">
             <span className="heroLabel">Gracie Barra School</span>
-            <h1 className="heroTitle">Jiu-Jitsu<br />Para Todos</h1>
+            <h1 className="heroTitle">Jiu-Jitsu<br />For Everyone</h1>
             <p className="heroSub">
-              Comece a sua jornada no Jiu-Jitsu. Para todas as idades, todos os níveis.
-              A sua família Gracie Barra espera por si.
+              Start your Jiu-Jitsu journey. For all ages, all levels.
+              Your Gracie Barra family is waiting for you.
             </p>
             <div className="heroCtas">
-              <a href="#contacto" className="btnPrimary"><span className="btnInner">Aula Experimental Grátis</span></a>
-              <a href="#sobreNos" className="btnOutline">Saiba Mais</a>
+              <a href="#contacto" className="btnPrimary"><span className="btnInner">Free Trial Class</span></a>
+              <a href="#sobreNos" className="btnOutline">Learn More</a>
             </div>
           </div>
         </div>
@@ -102,19 +102,19 @@ function App() {
         <div className="container statsGrid">
           <div className="stat">
             <span className="statNum">30+</span>
-            <span className="statLabel">Anos de Experiência</span>
+            <span className="statLabel">Years of Experience</span>
           </div>
           <div className="stat">
             <span className="statNum">800+</span>
-            <span className="statLabel">Escolas pelo Mundo</span>
+            <span className="statLabel">Schools Worldwide</span>
           </div>
           <div className="stat">
             <span className="statNum">1986</span>
-            <span className="statLabel">Fundada por Carlos Gracie Jr.</span>
+            <span className="statLabel">Founded by Carlos Gracie Jr.</span>
           </div>
           <div className="stat">
             <span className="statNum">100%</span>
-            <span className="statLabel">Jiu-Jitsu Para Todos</span>
+            <span className="statLabel">Jiu-Jitsu For Everyone</span>
           </div>
         </div>
       </div>
@@ -123,23 +123,23 @@ function App() {
       <section id="sobreNos" className="aboutWhy">
         <div className="container aboutGrid">
           <div className="aboutText">
-            <span className="sectionLabel">Sobre Nós</span>
+            <span className="sectionLabel">About Us</span>
             <h2 className="sectionTitle">We Are Gracie Barra</h2>
             <p>
-              Na Gracie Barra encarnamos os valores de Fraternidade, Integridade e Desenvolvimento.
-              Tratamos todos os membros como parte da nossa família alargada, com o objetivo
-              de difundir o Jiu-Jitsu e construir a próxima geração, honrando aqueles que vieram antes.
+              At Gracie Barra we embody the values of Brotherhood, Integrity and Development.
+              We treat all members as part of our extended family, with the goal of spreading
+              Jiu-Jitsu and building the next generation, honouring those who came before us.
             </p>
             <p>
-              A nossa academia é um espaço seguro e acolhedor para todas as idades e níveis.
-              Seja para defesa pessoal, condição física ou competição — temos o programa certo para si.
+              Our academy is a safe and welcoming space for all ages and levels.
+              Whether for self-defence, fitness or competition — we have the right program for you.
             </p>
-            <a href="#programas" className="btnPrimary"><span className="btnInner">Ver Programas</span></a>
+            <a href="#programas" className="btnPrimary"><span className="btnInner">View Programs</span></a>
           </div>
           <div className="aboutImage">
             <img
               src="https://graciebarraeurope.com/wp-content/uploads/2020/12/children-fighting.png"
-              alt="Crianças a praticar Jiu-Jitsu"
+              alt="Children practising Jiu-Jitsu"
             />
           </div>
         </div>
@@ -147,22 +147,22 @@ function App() {
           <div className="whyImage">
             <img
               src="https://graciebarraeurope.com/wp-content/uploads/2020/12/fighting-with-logo.png"
-              alt="Combate Gracie Barra"
+              alt="Gracie Barra Combat"
             />
           </div>
           <div className="whyText">
-            <span className="sectionLabel">A Nossa Filosofia</span>
+            <span className="sectionLabel">Our Philosophy</span>
             <h2 className="sectionTitle">Why Gracie Barra?</h2>
             <p>
-              Os instrutores da Gracie Barra são formados na filosofia e métodos de ensino
-              do Mestre Carlos Gracie Jr., que fundou a Gracie Barra em 1986. Um legado de
-              mais de 30 anos de experiência de ensino está ao seu serviço.
+              Gracie Barra instructors are trained in the philosophy and teaching methods
+              of Master Carlos Gracie Jr., who founded Gracie Barra in 1986. A legacy of
+              over 30 years of teaching experience is at your service.
             </p>
             <p>
-              Não se preocupe: você e a sua família estão em boas mãos. Os nossos instrutores
-              são certificados e dedicados ao seu desenvolvimento dentro e fora do tatami.
+              Don't worry — you and your family are in good hands. Our instructors
+              are certified and dedicated to your development on and off the mat.
             </p>
-            <a href="#contacto" className="btnPrimary"><span className="btnInner">Junte-se a Nós</span></a>
+            <a href="#contacto" className="btnPrimary"><span className="btnInner">Join Us</span></a>
           </div>
         </div>
       </section>
@@ -178,11 +178,11 @@ function App() {
         </div>
         <div className="container programsInner">
           <div className="sectionHeader centered">
-            <span className="sectionLabel light">O Que Oferecemos</span>
-            <h2 className="sectionTitle light">Programas</h2>
+            <span className="sectionLabel light">What We Offer</span>
+            <h2 className="sectionTitle light">Programs</h2>
             <p className="sectionDesc light">
-              A Gracie Barra oferece uma gama de programas de Jiu-Jitsu para crianças e adultos
-              de todas as idades e capacidades. Acreditamos na filosofia de Jiu-Jitsu para todos.
+              Gracie Barra offers a range of Jiu-Jitsu programs for children and adults
+              of all ages and abilities. We believe in the philosophy of Jiu-Jitsu for everyone.
             </p>
           </div>
           <div className="programsGrid">
@@ -190,48 +190,48 @@ function App() {
               <img src="https://graciebarraeurope.com/wp-content/uploads/2020/11/006DSC_7684-1-800x532.jpg" alt="GB1" />
               <div className="programCardOverlay">
                 <h3>GB1</h3>
-                <p>Fundamentos</p>
-                <a href="#contacto" className="btnSmall">Saiba Mais</a>
+                <p>Fundamentals</p>
+                <a href="#contacto" className="btnSmall">Learn More</a>
               </div>
             </div>
             <div className="programCard">
               <img src="https://graciebarraeurope.com/wp-content/uploads/2020/11/006DSC_7684-1-800x532.jpg" alt="GB2" />
               <div className="programCardOverlay">
                 <h3>GB2</h3>
-                <p>Avançado</p>
-                <a href="#contacto" className="btnSmall">Saiba Mais</a>
+                <p>Advanced</p>
+                <a href="#contacto" className="btnSmall">Learn More</a>
               </div>
             </div>
             <div className="programCard">
               <img src="https://graciebarraeurope.com/wp-content/uploads/2020/11/006DSC_7684-1-800x532.jpg" alt="GB3" />
               <div className="programCardOverlay">
                 <h3>GB3</h3>
-                <p>Alta Competição</p>
-                <a href="#contacto" className="btnSmall">Saiba Mais</a>
+                <p>High Competition</p>
+                <a href="#contacto" className="btnSmall">Learn More</a>
               </div>
             </div>
             <div className="programCard">
               <img src="https://graciebarraeurope.com/wp-content/uploads/2020/12/children-fighting.png" alt="GB Kids" />
               <div className="programCardOverlay">
                 <h3>GB Kids</h3>
-                <p>Crianças</p>
-                <a href="#contacto" className="btnSmall">Saiba Mais</a>
+                <p>Children</p>
+                <a href="#contacto" className="btnSmall">Learn More</a>
               </div>
             </div>
             <div className="programCard">
               <img src="https://graciebarraeurope.com/wp-content/uploads/2020/12/fighting-with-logo.png" alt="Barra FIT" />
               <div className="programCardOverlay">
                 <h3>Barra FIT</h3>
-                <p>Fitness &amp; Condição</p>
-                <a href="#contacto" className="btnSmall">Saiba Mais</a>
+                <p>Fitness &amp; Conditioning</p>
+                <a href="#contacto" className="btnSmall">Learn More</a>
               </div>
             </div>
             <div className="programCard">
-              <img src="https://graciebarraeurope.com/wp-content/uploads/2020/11/006DSC_7684-1-800x532.jpg" alt="Treino Privado" />
+              <img src="https://graciebarraeurope.com/wp-content/uploads/2020/11/006DSC_7684-1-800x532.jpg" alt="Private Training" />
               <div className="programCardOverlay">
-                <h3>Treino Privado</h3>
-                <p>Personalizado</p>
-                <a href="#contacto" className="btnSmall">Saiba Mais</a>
+                <h3>Private Training</h3>
+                <p>Personalised</p>
+                <a href="#contacto" className="btnSmall">Learn More</a>
               </div>
             </div>
           </div>
@@ -246,59 +246,59 @@ function App() {
       >
         <div className="eventsOverlay">
         <div className="eventsContent">
-          <span className="sectionLabel light">O Que Acontece</span>
-          <h2 className="sectionTitle light">Eventos</h2>
+          <span className="sectionLabel light">What's Happening</span>
+          <h2 className="sectionTitle light">Events</h2>
           <p className="eventsIntro">
-            A Gracie Barra oferece uma vasta gama de eventos emocionantes — desde dias de treino,
-            treinos de competição e seminários até acampamentos de Jiu-Jitsu e competições.
+            Gracie Barra offers a wide range of exciting events — from training days,
+            competition training and seminars to Jiu-Jitsu camps and competitions.
           </p>
           <div className="eventsGrid">
             <div className="eventCard">
               <img src="https://graciebarraeurope.com/wp-content/uploads/2020/10/comp-icon.png" alt="CompNet" />
               <div className="eventCardBody">
                 <h4>CompNet</h4>
-                <p>Competições profissionais para crianças e adultos de todas as idades.</p>
-                <a href="#eventos" className="btnSmall">Saiba Mais</a>
+                <p>Professional competitions for children and adults of all ages.</p>
+                <a href="#eventos" className="btnSmall">Learn More</a>
               </div>
             </div>
             <div className="eventCard">
               <img src="https://graciebarraeurope.com/wp-content/uploads/2020/10/Camping-icon.png" alt="Camps" />
               <div className="eventCardBody">
                 <h4>Jiu-Jitsu Camps</h4>
-                <p>Uma experiência inesquecível de Jiu-Jitsu em locais deslumbrantes.</p>
-                <a href="#eventos" className="btnSmall">Saiba Mais</a>
+                <p>An unforgettable Jiu-Jitsu experience in stunning locations.</p>
+                <a href="#eventos" className="btnSmall">Learn More</a>
               </div>
             </div>
             <div className="eventCard">
-              <img src="https://graciebarraeurope.com/wp-content/uploads/2020/10/Trophy-icon.png" alt="Competição" />
+              <img src="https://graciebarraeurope.com/wp-content/uploads/2020/10/Trophy-icon.png" alt="Competition" />
               <div className="eventCardBody">
-                <h4>Treino de Competição</h4>
-                <p>Sessões mensais com faixa-preta experientes em competição.</p>
-                <a href="#eventos" className="btnSmall">Saiba Mais</a>
+                <h4>Competition Training</h4>
+                <p>Monthly sessions with experienced black belts in competition.</p>
+                <a href="#eventos" className="btnSmall">Learn More</a>
               </div>
             </div>
             <div className="eventCard">
-              <img src="https://graciebarraeurope.com/wp-content/uploads/2020/10/Conference-icon.png" alt="Conferências" />
+              <img src="https://graciebarraeurope.com/wp-content/uploads/2020/10/Conference-icon.png" alt="Conferences" />
               <div className="eventCardBody">
-                <h4>Conferências GB</h4>
-                <p>Formação e suporte com conferências regulares em toda a região.</p>
-                <a href="#eventos" className="btnSmall">Saiba Mais</a>
+                <h4>GB Conferences</h4>
+                <p>Training and support with regular conferences across the region.</p>
+                <a href="#eventos" className="btnSmall">Learn More</a>
               </div>
             </div>
             <div className="eventCard">
               <img src="https://graciebarraeurope.com/wp-content/uploads/2020/10/Trophy-icon.png" alt="Regional" />
               <div className="eventCardBody">
-                <h4>Dias de Treino Regional</h4>
-                <p>Seminários com Professores reconhecidos de toda a Europa.</p>
-                <a href="#eventos" className="btnSmall">Saiba Mais</a>
+                <h4>Regional Training Days</h4>
+                <p>Seminars with renowned Professors from across Europe.</p>
+                <a href="#eventos" className="btnSmall">Learn More</a>
               </div>
             </div>
             <div className="eventCard">
-              <img src="https://graciebarraeurope.com/wp-content/uploads/2020/10/Special-events-icon.png" alt="Especiais" />
+              <img src="https://graciebarraeurope.com/wp-content/uploads/2020/10/Special-events-icon.png" alt="Special" />
               <div className="eventCardBody">
-                <h4>Eventos Especiais</h4>
-                <p>Galas de prémios, super fights e seminários únicos.</p>
-                <a href="#eventos" className="btnSmall">Saiba Mais</a>
+                <h4>Special Events</h4>
+                <p>Award galas, super fights and unique seminars.</p>
+                <a href="#eventos" className="btnSmall">Learn More</a>
               </div>
             </div>
           </div>
@@ -315,9 +315,9 @@ function App() {
         />
         <div className="ctaOverlay">
           <div className="container ctaContent">
-            <h2>Pronto para Começar?</h2>
-            <p>Agende a sua primeira aula experimental completamente grátis. Sem compromissos.</p>
-            <a href="#contacto" className="btnCta">Marcar Aula Grátis</a>
+            <h2>Ready to Start?</h2>
+            <p>Book your first trial class completely free. No commitment required.</p>
+            <a href="#contacto" className="btnCta">Book Free Class</a>
           </div>
         </div>
       </section>
@@ -326,8 +326,8 @@ function App() {
       <section id="noticias" className="news">
         <div className="container">
           <div className="sectionHeader centered">
-            <span className="sectionLabel">Fique a Par</span>
-            <h2 className="sectionTitle">Últimas Notícias</h2>
+            <span className="sectionLabel">Stay Updated</span>
+            <h2 className="sectionTitle">Latest News</h2>
           </div>
           <div className="newsGrid">
             <article className="newsCard">
@@ -338,10 +338,10 @@ function App() {
                 />
               </div>
               <div className="newsCardBody">
-                <span className="newsCategory">Competição</span>
-                <h3>World Summit 2025 na Europa</h3>
-                <p>O maior evento anual da Gracie Barra reúne instrutores de todo o mundo para partilhar conhecimento e celebrar a família GB.</p>
-                <a href="#noticias" className="newsLink">Ler Mais →</a>
+                <span className="newsCategory">Competition</span>
+                <h3>World Summit 2025 in Europe</h3>
+                <p>Gracie Barra's biggest annual event brings instructors from around the world to share knowledge and celebrate the GB family.</p>
+                <a href="#noticias" className="newsLink">Read More →</a>
               </div>
             </article>
             <article className="newsCard">
@@ -352,24 +352,24 @@ function App() {
                 />
               </div>
               <div className="newsCardBody">
-                <span className="newsCategory">Programas</span>
-                <h3>Sistema de Ranking CompNet Global</h3>
-                <p>O novo sistema de ranking global permite que atletas de todas as idades acompanhem o seu progresso competitivo.</p>
-                <a href="#noticias" className="newsLink">Ler Mais →</a>
+                <span className="newsCategory">Programs</span>
+                <h3>Global CompNet Ranking System</h3>
+                <p>The new global ranking system allows athletes of all ages to track their competitive progress.</p>
+                <a href="#noticias" className="newsLink">Read More →</a>
               </div>
             </article>
             <article className="newsCard">
               <div className="newsCardImg">
                 <img
                   src="https://graciebarraeurope.com/wp-content/uploads/2020/12/fighting-with-logo.png"
-                  alt="Mindset GB"
+                  alt="GB Mindset"
                 />
               </div>
               <div className="newsCardBody">
-                <span className="newsCategory">Filosofia</span>
-                <h3>O Mindset Gracie Barra: Sucesso Além dos Títulos</h3>
-                <p>Como o Jiu-Jitsu molda o carácter, a resiliência e o sucesso dentro e fora do tatami — a filosofia que nos define.</p>
-                <a href="#noticias" className="newsLink">Ler Mais →</a>
+                <span className="newsCategory">Philosophy</span>
+                <h3>The Gracie Barra Mindset: Success Beyond Titles</h3>
+                <p>How Jiu-Jitsu shapes character, resilience and success on and off the mat — the philosophy that defines us.</p>
+                <a href="#noticias" className="newsLink">Read More →</a>
               </div>
             </article>
           </div>
@@ -380,15 +380,15 @@ function App() {
       <section id="contacto" className="contact">
         <div className="container contactGrid">
           <div className="contactInfo">
-            <span className="sectionLabel light">Fale Connosco</span>
-            <h2 className="sectionTitle light">Contacto</h2>
+            <span className="sectionLabel light">Get In Touch</span>
+            <h2 className="sectionTitle light">Contact</h2>
             <div className="contactDetails">
               <div className="contactItem">
-                <strong>Morada</strong>
-                <p>Rua do Jiu-Jitsu, 123<br />Lisboa, Portugal</p>
+                <strong>Address</strong>
+                <p>Rua do Jiu-Jitsu, 123<br />Lisbon, Portugal</p>
               </div>
               <div className="contactItem">
-                <strong>Telefone</strong>
+                <strong>Phone</strong>
                 <p>+351 000 000 000</p>
               </div>
               <div className="contactItem">
@@ -396,30 +396,30 @@ function App() {
                 <p>info@graciebarra.pt</p>
               </div>
               <div className="contactItem">
-                <strong>Horário</strong>
-                <p>Segunda–Sexta: 07h–22h<br />Sábado: 09h–18h<br />Domingo: 10h–14h</p>
+                <strong>Hours</strong>
+                <p>Monday–Friday: 07h–22h<br />Saturday: 09h–18h<br />Sunday: 10h–14h</p>
               </div>
             </div>
           </div>
           <div className="contactForm">
-            <h3>Marque a Sua Aula Grátis</h3>
+            <h3>Book Your Free Class</h3>
             <form>
               <div className="formRow">
-                <input type="text" placeholder="Nome" />
-                <input type="text" placeholder="Apelido" />
+                <input type="text" placeholder="First Name" />
+                <input type="text" placeholder="Last Name" />
               </div>
               <input type="email" placeholder="Email" />
-              <input type="tel" placeholder="Telefone" />
+              <input type="tel" placeholder="Phone" />
               <select>
-                <option value="">Programa de Interesse</option>
-                <option>GB1 – Fundamentos</option>
-                <option>GB2 – Avançado</option>
-                <option>GB Kids – Crianças</option>
+                <option value="">Program of Interest</option>
+                <option>GB1 – Fundamentals</option>
+                <option>GB2 – Advanced</option>
+                <option>GB Kids – Children</option>
                 <option>Barra FIT – Fitness</option>
-                <option>Treino Privado</option>
+                <option>Private Training</option>
               </select>
-              <textarea placeholder="Mensagem (opcional)" rows="4"></textarea>
-              <button type="submit" className="btnPrimary fullWidth"><span className="btnInner">Enviar Pedido</span></button>
+              <textarea placeholder="Message (optional)" rows="4"></textarea>
+              <button type="submit" className="btnPrimary fullWidth"><span className="btnInner">Send Request</span></button>
             </form>
           </div>
         </div>
@@ -433,45 +433,45 @@ function App() {
               src="https://graciebarraeurope.com/wp-content/uploads/2025/08/RED-SHIELD-BARRA.png"
               alt="Gracie Barra"
             />
-            <p>Jiu-Jitsu Para Todos. Uma família global unida pelos valores de Fraternidade, Integridade e Desenvolvimento.</p>
+            <p>Jiu-Jitsu For Everyone. A global family united by the values of Brotherhood, Integrity and Development.</p>
             <div className="socialLinks">
               <a href="#home" className="socialLink" aria-label="Facebook">f</a>
               <a href="#home" className="socialLink" aria-label="Instagram">ig</a>
             </div>
           </div>
           <div className="footerCol">
-            <h4>Academia</h4>
+            <h4>Academy</h4>
             <ul>
-              <li><a href="#sobreNos">Sobre Nós</a></li>
-              <li><a href="#sobreNos">Por Que Gracie Barra?</a></li>
-              <li><a href="#programas">Programas</a></li>
-              <li><a href="#contacto">Encontre-nos</a></li>
+              <li><a href="#sobreNos">About Us</a></li>
+              <li><a href="#sobreNos">Why Gracie Barra?</a></li>
+              <li><a href="#programas">Programs</a></li>
+              <li><a href="#contacto">Find Us</a></li>
             </ul>
           </div>
           <div className="footerCol">
-            <h4>Programas</h4>
+            <h4>Programs</h4>
             <ul>
-              <li><a href="#programas">GB1 – Fundamentos</a></li>
-              <li><a href="#programas">GB2 – Avançado</a></li>
+              <li><a href="#programas">GB1 – Fundamentals</a></li>
+              <li><a href="#programas">GB2 – Advanced</a></li>
               <li><a href="#programas">GB Kids</a></li>
               <li><a href="#programas">Barra FIT</a></li>
-              <li><a href="#programas">Treino Privado</a></li>
+              <li><a href="#programas">Private Training</a></li>
             </ul>
           </div>
           <div className="footerCol">
-            <h4>Recursos</h4>
+            <h4>Resources</h4>
             <ul>
-              <li><a href="#noticias">Notícias</a></li>
-              <li><a href="#eventos">Eventos</a></li>
-              <li><a href="#contacto">Contacto</a></li>
-              <li><a href="#home">Política de Privacidade</a></li>
+              <li><a href="#noticias">News</a></li>
+              <li><a href="#eventos">Events</a></li>
+              <li><a href="#contacto">Contact</a></li>
+              <li><a href="#home">Privacy Policy</a></li>
             </ul>
           </div>
         </div>
         <div className="footerBottom">
           <div className="container footerBottomInner">
-            <p>© 2025 Gracie Barra. Todos os direitos reservados.</p>
-            <p>Parte da família GRACIEBARRA.COM</p>
+            <p>© 2025 Gracie Barra. All rights reserved.</p>
+            <p>Part of the GRACIEBARRA.COM family</p>
           </div>
         </div>
       </footer>
@@ -480,7 +480,7 @@ function App() {
       <button
         className={`anchorBtn${showAnchor ? " visible" : ""}`}
         onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
-        aria-label="Voltar ao topo"
+        aria-label="Back to top"
       >
         ↑
       </button>
